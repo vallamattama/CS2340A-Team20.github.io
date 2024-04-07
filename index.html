@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GreenPlate</title>
+<title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -15,20 +20,25 @@ body {
   background: #568545;
   color: #1a0d09;
 }
+
 .header h1 {
   font-size: 40px;
 }
 
 .navbar {
+  overflow: hidden;
   background-color: #333;
 }
+
 .navbar a {
   float: left;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
+  text-decoration: none;
 }
+
 .navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -38,45 +48,49 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .side {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
+
 .main {   
   flex: 70%;
   background-color: white;
   padding: 20px;
+  max-height: 0.5*device-height;
+  max-width: 0.7*device-width;
+  
+  overflow-y: auto;
 }
 
 </style>
 </head>
 <body>
 
-<div class = "header">
-	<h1>GreenPlate: A Sustainable Food Management System</h1>
-	<p>A CS2340 Team 20 Project</p>
+<div class="header">
+  <h1>GreenPlate: A Sustainable Food Management System</h1>
+  <p>A project by CS2340 Team 20</p>
+</div>
 
 <div class="navbar">
-  <a href="#">Design & Architecture</a>
+  <a href="#">Design & Arch</a>
   <a href="#">User Interface</a>
   <a href="#">Functionality</a>
 </div>
 
 <div class="row">
   <div class="side">
-    <img src = "splash_screen.png" style="height:200px;">
+    <img src="splash_screen.png" style="height:200px;">Image</img>
     <p>Welcome to GreenPlate!</p>
   </div>
-
   <div class="main">
-  	<h2>Hello from Group 20!</h2>
-  	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Hello from Group 20!</h2>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
   </div>
 </div>
-
-
-
 
 </body>
 </html>
