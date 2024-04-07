@@ -28,12 +28,26 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+  padding: 30px 5px;
 }
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
 }
 
 </style>
@@ -49,6 +63,21 @@ body {
   <a href="#">User Interface</a>
   <a href="#">Functionality</a>
 </div>
+
+<div class="row">
+  <div class="row">
+  <div class="side">
+    <img src = "splash_screen.png" style="height:200px;">
+    <p>Welcome to GreenPlate!</p>
+
+  <div class="main">
+  	<h2>Hello from Group 20!</h2>
+  	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+
+
 
 </body>
 </html>
