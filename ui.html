@@ -44,14 +44,12 @@ body {
   color: black;
 }
 
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-  max-height: 0.5*device-height;
-  max-width: 0.7*device-width;
-  
-  overflow-y: auto;
+.text {
+  align-self: flex-end;
+}
+
+.paragraph {
+  display: flex;
 }
 
 /* Footer */
@@ -71,8 +69,7 @@ img {
 <body>
 
 <div class="header">
-  <h1>GreenPlate: A Sustainable Food Management System</h1>
-  <p>A project by CS2340 Team 20</p>
+  <h1>User Interface</h1>
 </div>
 
 <div class="navbar">
@@ -82,10 +79,21 @@ img {
 </div>
 
 <div class="main">
-  <h2>Hello from Group 20!</h2>
-  <p>GreenPlate is dedicated to fostering sustainable eating and shopping habits. The app's design focuses on reducing food waste and promoting efficient use of resources. Through this project, users can actively contribute to a more sustainable lifestyle. The app allows users to track daily calorie intake, create recipes, manage ingredient quantities, and generate shopping lists.</p>
+  <p class="paragraph">
+    <img src="personal_info.png"><span class="text">Blah blah blah this is our personal info screen. here you can do blah blah blah, wow so cool.</span>
+  </p>
   <br>
-	<h2>Conclusion & Wrap-up goes here</h2>
+	<p class="paragraph">
+    <img src="input_meal.png"><span class="text">Blah blah blah this is our input meal screen. here you can do blah blah blah, wow so cool.</span>
+  </p>
+  <br>
+  <p class="paragraph">
+    <img src="recipes.png"><span class="text">Blah blah blah this is our recipes screen. here you can do blah blah blah, wow so cool.</span>
+  </p>
+  <br>
+  <p class="paragraph">
+    <img src="ingredients.png"><span class="text">Blah blah blah this is our ingredients screen. here you can do blah blah blah, wow so cool.</span>
+  </p>
 </div>
 
 <div class="footer">
