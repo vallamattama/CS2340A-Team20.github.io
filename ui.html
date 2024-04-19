@@ -62,6 +62,19 @@ body {
   color: black;
 }
 
+.flexbox {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-conent: space-evenly;
+  align-items: center;
+}
+
+.flexbox .element {
+  padding: 20px;
+  flex-grow: 1;
+}
+
 img {
 	border-radius: 5%;
   max-height: 300px;
@@ -83,7 +96,7 @@ img {
   <a href="#">Functionality</a>
 </div>
 
-<div class="main">
+<div class="flexbox">
   <p class="paragraph">
     <img src="images/personal_info.png"><span class="text">This is our Personal Information Screen. On this page, users can input their info, including gender, weight, and height.</span>
   </p>
